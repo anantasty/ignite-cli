@@ -241,6 +241,7 @@ ignite chain build [flags]
 **Options**
 
 ```
+      --check-dependencies        Verify that cached dependencies have not been modified since they were downloaded
       --clear-cache               Clear the build cache (advanced)
   -h, --help                      help for build
       --home string               Home directory used for blockchains
@@ -291,10 +292,11 @@ ignite chain init [flags]
 **Options**
 
 ```
-      --clear-cache   Clear the build cache (advanced)
-  -h, --help          help for init
-      --home string   Home directory used for blockchains
-  -p, --path string   path of the app (default ".")
+      --check-dependencies   Verify that cached dependencies have not been modified since they were downloaded
+      --clear-cache          Clear the build cache (advanced)
+  -h, --help                 help for init
+      --home string          Home directory used for blockchains
+  -p, --path string          path of the app (default ".")
 ```
 
 **SEE ALSO**
@@ -317,15 +319,16 @@ ignite chain serve [flags]
 **Options**
 
 ```
-      --clear-cache         Clear the build cache (advanced)
-  -c, --config string       Ignite config file (default: ./config.yml)
-  -f, --force-reset         Force reset of the app state on start and every source change
-  -h, --help                help for serve
-      --home string         Home directory used for blockchains
-  -p, --path string         path of the app (default ".")
-      --proto-all-modules   Enables proto code generation for 3rd party modules used in your chain
-  -r, --reset-once          Reset of the app state on first start
-  -v, --verbose             Verbose output
+      --check-dependencies   Verify that cached dependencies have not been modified since they were downloaded
+      --clear-cache          Clear the build cache (advanced)
+  -c, --config string        Ignite config file (default: ./config.yml)
+  -f, --force-reset          Force reset of the app state on start and every source change
+  -h, --help                 help for serve
+      --home string          Home directory used for blockchains
+  -p, --path string          path of the app (default ".")
+      --proto-all-modules    Enables proto code generation for 3rd party modules used in your chain
+  -r, --reset-once           Reset of the app state on first start
+  -v, --verbose              Verbose output
 ```
 
 **SEE ALSO**
